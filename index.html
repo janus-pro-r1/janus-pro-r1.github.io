@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Evaluating mathematical reasoning of foundation models in visual contexts">
+  <meta name="keywords" content="MathVista, Math Vista">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> FocusDiff</title>
+
+  <link rel="icon" href="static/images/aha.png">
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="stylesheet" href="./static/css/leaderboard.css">
+
+  <script type="text/javascript" src="static/js/sort-table.js" defer></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/explorer-index.js"></script>
+  <script src="./static/js/question_card.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title is-bold">
+            <img src="static/images/aha.png" style="width:1em;vertical-align: middle" alt="Logo"/>
+            <span class="mathvista" style="vertical-align: middle">Janus-Pro-R1</span>
+            </h1>
+          <h2 class="subtitle is-3 publication-subtitle">
+            Unlocking Aha Moments with CoT: Advancing Multimodal LLMs for Unified Image Generation
+          </h2>
+          <div class="is-size-5 publication-authors">
+            <!-- <span class="author-block">Anonymous</span> -->
+
+           <span class="author-block">
+              <a href="None">Kaihang Pan</a><sup style="color:#6fbf73;">1</sup><sup>*</sup>,</span>
+           <span class="author-block">
+              <a href="None">Yang Wu</a><sup style="color:#ffac33;">2</sup><sup>*</sup>,</span>
+           <span class="author-block">
+             <a href="None">Wendong Bu</a><sup style="color:#6fbf73;">1</sup><sup>*</sup>,</span>
+           <span class="author-block">
+             <a href="None">Kai Shen</a><sup style="color:#ac33ff;">3</sup><sup>*</sup>,</span>
+           <span class="author-block"> 
+             <a href="None">Juncheng Li</a><sup style="color:#6fbf73;">1</sup>,</span>
+             <span class="author-block">
+              <a href="None">Yingting Wang</a><sup style="color:#ffac33;">2</sup>,</span><br>
+           <span class="author-block">
+            <a href="None">Yunfei Li</a><sup style="color:#ffac33;">2</sup>,</span>
+            <span class="author-block">
+              <a href="">Siliang Tang</a><sup style="color:#6fbf73;">1</sup>,</span>
+            <span class="author-block">
+              <a href="">Jun Xiao</a><sup style="color:#6fbf73;">1</sup>,</span>
+            <span class="author-block">
+              <a href="">Fei Wu</a><sup style="color:#6fbf73;">1</sup>,</span>
+           <span class="author-block">
+            <a href="None">Hang Zhao</a><sup style="color:#ffac33;">2</sup>,</span>
+          <span class="author-block">
+            <a href="">Yueting Zhuang</a><sup style="color:#6fbf73;">1</sup></span>
+          </div>
+         <div class="is-size-5 publication-authors">
+           <span class="author-block"><sup style="color:#6fbf73;">1</sup>Zhejiang University,</span>
+           <span class="author-block"><sup style="color:#ffac33">2</sup>Ant Group,</span>
+           <span class="author-block"><sup style="color:#ac33ff">3</sup>Moontshot AI</span> <br>
+
+          <span class="author-block"><sup>*</sup>Equal Contribution</span><br>
+           
+        </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (Wait)</span>
+                  </a>
+              </span>
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <!-- <i class="far fa-images"></i> -->
+                      <p style="font-size:18px">🤗</p>
+                      <!-- 🔗 -->
+                  </span>
+                  <span>Checkpoint (Wait)</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <!-- <i class="far fa-images"></i> -->
+                      <p style="font-size:18px">🤗</p>
+                      <!-- 🔗 -->
+                  </span>
+                  <span>Data (Wait)</span>
+                </a>
+              </span>
+              
+              
+            </div>
+
+          </div>
+          
+          
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container" style="margin-bottom: 1vh;">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Introduction</h2>
+        <div class="content has-text-justified">
+          <p>
+            Recent endeavors in Multimodal Large Language Models (MLLMs) aim to unify visual comprehension and generation. However, these two capabilities remain largely independent, as if they are two separate functions encapsulated within the same model. Consequently, visual comprehension does not enhance visual generation, and the reasoning mechanisms of LLMs have not been fully integrated to revolutionize image generation. In this paper, we propose to enable the collaborative co-evolution of visual comprehension and generation, advancing image generation into an iterative introspective process. We introduce a two-stage training approach: supervised fine-tuning teaches the MLLM with the foundational ability to generate genuine CoT for visual generation, while reinforcement learning activates its full potential via an exploration-exploitation trade-off. Ultimately, we develop <img src="static/images/aha.png" style="width:1.0em;vertical-align: middle" alt="Logo"/><span class="mathvista">Janus-Pro-R1</span>, unlocking the Aha moment in visual generation, and advancing MLLMs from text-to-image tasks to unified image generation. Extensive experiments demonstrate the superior performance of our model in both text-to-image generation and image editing, Extensive experiments demonstrate that our model achieves superior performance in both text-to-image generation and image editing tasks, also serving as an excellent image semantic evaluator with strong visual comprehension capabilities.
+          </p>
+         
+        </div>        
+      </div>
+    </div>
+    <!--/ Abstract. -->
+</div>
+</section>
+
+<section class="hero is-light is-small">
+  <div class="hero-body has-text-centered">
+  <h1 class="title is-1 mathvista">
+            <span class="mathvista">framework</span>
+  </h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered m-6">
+      
+      <div class="content has-text-justified">
+        <div class="column is-full has-text-centered content">
+          <h4 class="title is-3">Benefits after Collaborating Visual Comprehension and Generation</h4>
+          <img src="static/images/intro.png" alt="arithmetic reasoning" width="80%"/><br>
+          <div class="content has-text-justified">
+          <p>
+            If we can synergize visual comprehension and generation within MLLMs, incorporating the reasoning mechanisms into visual generationthe, MLLM can seamlessly combine and switch between its comprehension and generation capabilities. It will bring about three revolutionary benefits for image generation:
+          </p>
+          <p>
+            <b>(1) Genuine Chain-of-Thought (CoT):</b> A genuine CoT in MLLMs should be self-driven by the model's deep thinking within a unified next-token prediction framework based on the causal dependency of tokens. The visual comprehension and generation capabilities are naturally linked to form a interleaved text-image reasoning chain under the spontaneous scheduling of the MLLM, which can be treated as a CoT that truly helps produce more refined images.
+          </p>
+          <p>
+            <b>(2) Unlocking Aha Moments:</b> Genuine self-driven CoT further endows MLLMs with the ability of self-correction, unlocking the Aha Moments. After generating the initial image, the MLLM leverages its comprehension capability to reflect on the current generation. Once errors are detected, it re-engages its visual generation capabilities to re-produce images that better meet user requirements.
+          </p>
+          <p>
+            <b>(3) Enabling Unified Image Generation:</b> The emergent of the above two benefits signifies that the model can effectively collaborate its visual comprehension and generative abilities. This not only enhances its performance in text-to-image tasks, but also enables flexible unified image generation for any complex situational purposes, such as  image editing. 
+          </p>
+          
+        </div>
+        <h4 class="title is-3">Two-Stage Training Paradigm</h4>
+        <img src="static/images/method.png" alt="arithmetic reasoning" width="80%"/><br>
+        <div class="content has-text-justified">
+        <p>
+          We propose a two-stage training paradigm to enable introspective text-to-image generation via genuine reasoning chains (CoT), unlocking what we call Aha Moments in visual generation:
+        </p>
+        <p>
+          <b>Stage 1 – Supervised Fine-Tuning (SFT):</b>
+          We employ SFT to endow MLLMs with the foundational ability to construct a genuine reasoning chain for visual generation that triggers Aha moments
+          To achieve this, we break down the visual generation CoT into several sub-skills with a mixed training approach: <i>
+          (a) Text-to-image generation;
+          (b) Image-text consistency self-evaluation;
+          (c) Image regeneration through reflection. </i>
+        </p><p>
+          <b>Stage 2 – Reinforcement Learning (RL):</b>
+          we treat image generation as a long token-level Markov decision process and perform reinforcement learning based on GRPO algorithm
+          Without any ground-truth images, we encourage the model to spontaneously collaborate its comprehension and generation capabilities for introspective text-to-image generation, also designing a bi-level QA-based reward function for optimization. I
+          This approach equips the model with self-reflective capabilities, advancing from simple text-to-image synthesis to iterative introspective image generation.
+        </p>
+      </div>
+      </div>
+        
+        <!-- <div style="display: grid; place-items: center;">
+        <img src="static/images/intro.png" alt="arithmetic reasoning" width="80%"/><br>
+        </div> -->
+        
+        <!-- <p><img src="static/images/focus.png" style="width:1.0em;vertical-align: middle" alt="Logo"/><span class="mathvista">FocusDiff</span> addresses the challenge of fine-grained semantic control in AR-based image generation. While AR models excel in capturing global semantics, they often struggle with subtle distinctions. And <img src="static/images/focus.png" style="width:1.0em;vertical-align: middle" alt="Logo"/><span class="mathvista">FocusDiff</span> enhances text-to-image alignment through two main innovations:</p>
+        <b>1. FocusDiff-Data:</b> A curated dataset of paired prompts and images with subtle semantic variations.
+        <br><br>
+          <div style="display: grid; place-items: center;">
+        <img src="static/images/case.png" alt="arithmetic reasoning" width="90%"/><br></div>
+        <p><b>2. Pair-GRPO:</b> A novel RL algorithm extending Group Relative Policy Optimization to emphasize fine-grained semantic differences during training.</p>
+        <div style="display: grid; place-items: center;">
+        <img src="static/images/grpo.png" alt="arithmetic reasoning" width="48%"/><br></div>
+        <p>
+        On this basis, we propose a new benchmark, i.e., <span class="mathvista">PairComp</span>. Each test case in <span class="mathvista">Paircomp</span> contains two similar prompts with subtle differences. By comparing the accuracy of the images generated by the model for each prompt, we evaluate whether the model has focused on the fine-grained semantic differences in the prompts to produce the corresponding correct images. The two prompts in a test case exhibit word-level differences that lead to noticeable distinctions in certain fine-grained semantic aspects. As shown in following figure, these differences can be categorized into six types: (1) Overall appearance difference; (2) Color difference; (3) Counting difference; (4) Position difference; (5) Style & Tone difference; (6) Text difference.
+        </p>
+        <br>
+        <div style="display: grid; place-items: center;">
+        <img src="static/images/benchmark.png" alt="arithmetic reasoning" width="90%"/><br></div> -->
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body has-text-centered">
+  <h1 class="title is-1 mathvista">
+            <span class="mathvista">Main Results</span>
+  </h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered m-6">
+      
+      <div class="column is-full has-text-centered content">
+        <h2 class="title is-3">Automated Metric Evaluation</h2>
+        <div class="content has-text-justified">
+        <p>We employ Janus-Pro-7B as the backbone, developing <img src="static/images/aha.png" style="width:1.0em;vertical-align: middle" alt="Logo"/><span class="mathvista">Janus-Pro-R1</span> after employing the two-stage training paradigm. we
+          first conduct an automated metric evaluation on 3 text-to-image benchmarks: GenEval, T2ICompBench, and DPG-Bench. As shown in the following table, <img src="static/images/aha.png" style="width:1.0em;vertical-align: middle" alt="Logo"/><span class="mathvista">Janus-Pro-R1-7B</span> surpasses other diffusion-based and MLLM-based baselines.</p>
+      </div>
+      <!-- <img src="static/images/t2i.png" alt="arithmetic reasoning" width="90%"/><br> -->
+      <img src="static/images/res.png" alt="arithmetic reasoning" width="80%"/><br>
+      
+      <h2 class="title is-3">Qualitative Examples on T2I</h2>
+      <div class="content has-text-justified">
+      <p>we present qualitative examples of <img src="static/images/aha.png" style="width:1.0em;vertical-align: middle" alt="Logo"/><span class="mathvista">Janus-Pro-R1</span> to trigger Aha moments within its reasoning chains to generate superior images. 
+        The model could leverages its visual comprehension capabilities to accurately identify the issues in its initially-generated images, then unleashing the visual generation capabilities to output a more accurate image. 
+        Even if the newly generated image still fails to meet the requirements, the model can trigger a second Aha moment, re-evaluating the  issues and repeat the visual generation to produce a fully compliant image..</p></div>
+      <img src="static/images/aha_case.png" alt="arithmetic reasoning" width="90%"/><br>
+      
+      <div class="content has-text-justified"><p>
+      We find that this strong self-reflection ability is more derived from the enhancement of RL. We refer to the model after SFT as Janus-Pro-SFT. We further present cases of counterfactual generation to highlight the differences between Janus-Pro-SFT and <img src="static/images/aha.png" style="width:1.0em;vertical-align: middle" alt="Logo"/><span class="mathvista">Janus-Pro-R1</span>. When given counterfactual prompts such as ''a square apple'', both models initially generate images that do not align with the prompt due to ingrained common-sense. However, Janus-Pro-SFT deems the initial image reasonable as the final output. 
+      In contrast, <img src="static/images/aha.png" style="width:1.0em;vertical-align: middle" alt="Logo"/><span class="mathvista">Janus-Pro-R1</span> identifies the semantic mismatches in the initial image and regenerate a new one that meets the requirements. 
+      </p></div>
+
+      <img src="static/images/conter.png" alt="arithmetic reasoning" width="90%"/><br><br>
+
+
+      <div class="content has-text-justified">
+      <p>We further presents a direct qualitative comparison between Janus-Pro-7B and our <img src="static/images/aha.png" style="width:1.0em;vertical-align: middle" alt="Logo"/><span class="mathvista">Janus-Pro-R1-7B</span> on the final generated images, with both short and long captions. It can be observed that compared to Janus-Pro-7B, after unlocking the Aha moments with CoT via a two-stage training paradigm, our model not only generates images that are more semantically aligned with the text but also achieves higher aesthetic quality.</p></div>
+      <img src="static/images/t2i_case.png" alt="arithmetic reasoning" width="90%"/>
+      <h2 class="title is-3">Qualitative Examples on Image Editing</h2>
+      
+      <div class="content has-text-justified"><p>
+      We also conduct a qualitative comparison with both some leading works on multi-turn editing. Our model supports a wide range of editing operations, with the output images consistently resembling the source images while remaining coherent with the instructions.
+      </p></div>
+      <img src="static/images/edit.png" alt="arithmetic reasoning" width="90%"/>
+
+      <!-- <img src="static/images/compareemu3.png" alt="arithmetic reasoning" width="90%"/><br> -->
+    </div>
+  </div>
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title is-3 has-text-centered">BibTeX</h2>
+    <pre><code>
+     
+    </code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="content has-text-centered">
+  </div>
+  <div class="columns is-centered">
+    <div class="column is-8">
+      <div class="content">
+<p style="font-size: 14px;">
+This website is adapted from  <a href="https://ddt-llama.github.io/">DDT-LLaMA</a>, licensed under a <a rel="license"
+                                            href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+Commons Attribution-ShareAlike 4.0 International License</a>.
+</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>

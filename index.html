@@ -6,7 +6,7 @@
         content="Evaluating mathematical reasoning of foundation models in visual contexts">
   <meta name="keywords" content="MathVista, Math Vista">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> FocusDiff</title>
+  <title> Janus-Pro-R1</title>
 
   <link rel="icon" href="static/images/aha.png">
 
@@ -41,7 +41,7 @@
             <span class="mathvista" style="vertical-align: middle">Janus-Pro-R1</span>
             </h1>
           <h2 class="subtitle is-3 publication-subtitle">
-            Unlocking Aha Moments with CoT: Advancing Multimodal LLMs for Unified Image Generation
+            Unlocking Aha Moments with CoT: Advancing Multimodal LLMs for Collaborative Visual Comprehension and Generation
           </h2>
           <div class="is-size-5 publication-authors">
             <!-- <span class="author-block">Anonymous</span> -->
@@ -143,7 +143,7 @@
         <h2 class="title is-3">Introduction</h2>
         <div class="content has-text-justified">
           <p>
-            Recent endeavors in Multimodal Large Language Models (MLLMs) aim to unify visual comprehension and generation. However, these two capabilities remain largely independent, as if they are two separate functions encapsulated within the same model. Consequently, visual comprehension does not enhance visual generation, and the reasoning mechanisms of LLMs have not been fully integrated to revolutionize image generation. In this paper, we propose to enable the collaborative co-evolution of visual comprehension and generation, advancing image generation into an iterative introspective process. We introduce a two-stage training approach: supervised fine-tuning teaches the MLLM with the foundational ability to generate genuine CoT for visual generation, while reinforcement learning activates its full potential via an exploration-exploitation trade-off. Ultimately, we develop <img src="static/images/aha.png" style="width:1.0em;vertical-align: middle" alt="Logo"/><span class="mathvista">Janus-Pro-R1</span>, unlocking the Aha moment in visual generation, and advancing MLLMs from text-to-image tasks to unified image generation. Extensive experiments demonstrate the superior performance of our model in both text-to-image generation and image editing, Extensive experiments demonstrate that our model achieves superior performance in both text-to-image generation and image editing tasks, also serving as an excellent image semantic evaluator with strong visual comprehension capabilities.
+            Recent endeavors in Multimodal Large Language Models (MLLMs) aim to unify visual comprehension and generation. However, these two capabilities remain largely independent, as if they are two separate functions encapsulated within the same model. Consequently, visual comprehension does not enhance visual generation, and the reasoning mechanisms of LLMs have not been fully integrated to revolutionize image generation. In this paper, we propose to enable the collaborative co-evolution of visual comprehension and generation, advancing image generation into an iterative introspective process. We introduce a two-stage training approach: supervised fine-tuning teaches the MLLM with the foundational ability to generate genuine CoT for visual generation, while reinforcement learning activates its full potential via an exploration-exploitation trade-off. Ultimately, we develop <img src="static/images/aha.png" style="width:1.0em;vertical-align: middle" alt="Logo"/><span class="mathvista">Janus-Pro-R1</span>, unlocking the Aha moment in visual generation, advancing MLLMs from text-to-image tasks to unified image generation. Extensive experiments demonstrate that our model not only excels in text-to-image generation and image editing, but also functions as a superior image semantic evaluator with enhanced visual comprehension capabilities.
           </p>
          
         </div>        
@@ -182,6 +182,9 @@
           <p>
             <b>(3) Enabling Unified Image Generation:</b> The emergent of the above two benefits signifies that the model can effectively collaborate its visual comprehension and generative abilities. This not only enhances its performance in text-to-image tasks, but also enables flexible unified image generation for any complex situational purposes, such as  image editing. 
           </p>
+          <p>
+            <b>(4) Mutual Benefits:</b> the collaboration between visual comprehension and generation should yield mutual benefits. This means that as visual comprehension evolves the capabilities of visual generation, it also enhances its own performance in the process.
+            </p>
           
         </div>
         <h4 class="title is-3">Two-Stage Training Paradigm</h4>
@@ -278,6 +281,15 @@
       </p></div>
       <img src="static/images/edit.png" alt="arithmetic reasoning" width="90%"/>
 
+      <h2 class="title is-3">Discussion</h2>
+      <div class="content has-text-justified">
+      <p><b>(1) SFT Memorizes, RL Generalizes:</b></p><p> SFT tends to enable the model to imitate and memorize some sub-skills to develop the visual generation CoT, lacking the ability of generalization. Of course, SFT is still essential, as it serves the role as cold-start and provides the foundation for the MLLM to explore reliable visual generation CoTs.
+      In contrast, RL enhances generalization, significantly improving both the quality of the generated images and ensuring that the introspection process is genuinely effective. And it advances the original imitative behavior after SFT to genuine reasoning, thereby better avoiding the generation of hallucinations.</p>
+      <p><b>(2) RL Paves the Way for Genuine Unified Visual Comprehension and Generation:</b></p><p>The essence of unification between visual comprehension and generation should be reflected in the synergistic enhancement between the two capabilities, such as comprehension and generation improving each other through collaborative efforts. </p>
+        <p>We observe that although we can endow models with the foundational ability to collaborate on visual comprehension and generation through SFT, the model appears to merely mechanically mimic and combine these two skills. The combination does not bring about any substantial improvement to either capability. However, through RL, we encourage the model to spontaneously integrate the two capabilities to explore reasoning pathways, and merely provide incentives as appropriate guidance. 
+        We find that the model learns how to better coordinate these two capabilities, resulting in stronger text-to-image generation and image semantic understanding abilities.</p>
+        <p>Therefore, we argue that RL holds the potential to unlock genuine unified visual comprehension and generation. Given adequate computational resources,  we think that large-scale RL could feasibly be employed to achieve a synergistic enhancement of visual comprehension and generation for the genuine unification.</p>
+      </div>
       <!-- <img src="static/images/compareemu3.png" alt="arithmetic reasoning" width="90%"/><br> -->
     </div>
   </div>
